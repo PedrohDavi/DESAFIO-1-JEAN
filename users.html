@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Users</title>
+
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css')}}">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+  
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=3ofFsk9lZYTp7bGwxUYhIza2YvyFFiSzFZHtL7v4vFqONuzfSPeYxsIG8-Lf1qD_nLbaMpCIIKrsHWB6uh1WzYqBEgt7U7LZRa_nVriftvS06LEPBIOd4maR3EX-WTo5428jGo8d66HIktwVtknklRLdXVcBOm6MJVltNCxpY4CBUFDbu6M9erWaNYvTSxydSqK9ohDAfS_COTEWdUpJP29aGwhtmDy_R8siGfc2IbxsPMLnvlVVdOBjMVbuj7TuNXJdUnnq0PyGqFW8s_LPdQ315gkURUN_e1fJRRVetOXRcVclvIrkjtbEF3xbs6W-Q8tI1WF6vj51-oonBANvw8Gv4uwV7pEuF9rWZz9hPeTyXHk8-sIT5cBnIQihDnwIwQaDMbC3LThvz2B4M6rcXINQOfwVTxK0BMstpAm2Kb9ytd-0wK1yde4lhPc0r9i2pvtjRw_iqm6cYi18x_EALaLZv00Q8IxSNKd_kmj6I9IPDtxH8cDFWZ9MrIGyif144HH9pn9mQkY63FBLrgkAG8U5dF5AsIizhN7KM8R5YmZ2aFhSEaS0Pq1BTk6rO1Hgiw-fcr8fU3Nh8tFIEi3J8eXfbh3fvZGf3YaTKXxaTbz-rKRkIwyQGYFo8Mn72PRiPORqBdsssBP2H-ZyBjoAYgDGT4x5qBqGH_EpT6-ajX7497oGryzIFYxPKdKfEZ4Ht2SEyO3l0VmMzkYUmMZ0VYzJhATYf9X3poTXOF9CX747Wu7tD5ZFFiwKxyc-hEzJqk_Ei2FUxTZ83mPVYNiwBdjsR6LM8_4blrBZ1q_V1eo3LZ58dQOy3vhq74Eml9S9Xk7HDorJ_f4_VC0_rfwP5r9RK74FPT04hb9fEBt1RleM9zAMc08ttVrSlOG69vwIS1M_ACrZHlpEBus6NA6u72PO6B6lWkci5TDwliynZfaru33U98-LvroFr2KQOFhwf7bZbs-MXKEkxXwNj55cTsrybXvdJI4ML-PpeJuN-fR19ckZlIojqsHLdzjbqtRQPJMcC4ecC5-Ct1N0f3aUApe3fQbH-wFW9hP4EVs0Uwq-eD1tZclYyXE0pMVuTMpGOm2qYGhmNtDHoRa1oq6MavsuCQyeiC5l8HoJCPXz9V26hnx2Cdjz5VVTyhXR2FJc1F0lQllN4FBTcAiGmX9UvaFs8r-lpL2O9YcsHrWXrMTFsXFxfeJ5cAtplWm9NcQVGOKPgPR8dOXEOUY3O2KjKdFcbMMB5gar1ETyS0QXKs2AUrFXiUcGlfoNrdjtvraZhiTCumvDUMAWkZr-Yf_l8xI8UToA3lr5BYdwxewyQilnJrVLN37tHtaQ-281zc8KJWFUxsnBiuaGO3vjY2sLJKXb9t-BhGixQBY2HMb6CUeJrq4fxHiODA_BwsexIqWE8HGlSGzkvtltwjdwg8bvoCQU5XXUC2hV_vhXGZEV3QdMeWoRgdoG54Kt165oAM3WIx5t8X3xdrArlhyqBgdrdQ4WCUAkzBn-ZFRN9jYn36f4FlF8BeeCqyvm6vnnX55IBSGs6kz-axmXwis317LeYtgUyHLv39gkH_q058MokXTwAmxr8B1-W1er3iaVZkVkBmSFMyHWlu4THN15xOdGBslnNnBPSRADthoqbsOV-paK7ZIOFv_B6OKAn8GPu3Cbvnr1Da8Tag_GDs7pskohPJz5nt2lVA0Cgom_frJ9sUfDu-FIHVSgiic1vu9oDkFI3HdCMFKqU27wh7rwy9x6CrQe4Lhzlfthw049HVJV28_AYGdK_foTyYheCSe3LoHe4EyS2f_o0lcswe7EbId1DdYBWpWlnpUdTjaGuz_LhrOHU3M1t3p5ofFWYoEqvjoWM27lz58z3PTVIeBietL1w_7IgmWXUYlkTRatiq_5lyUIJxQ6GQqv1KKylxTpPjENMQRINgT9whSb8VBY0Un9h-t0sm5v8lQH16sCAry_bWX_Ia-rgW-e5tiWH4jmbnc8ZNyD-cmMJ-mW6XK92SBV1x_km3pEZfU4qL3BN9OTX3Kj9Mb2jQt-vrIxOWxjg_Ol" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+
+<table id="users" class="display">
+    <thead>
+
+        <tr>
+            <th>E-mail</th>
+            <th>Assunto</th>
+            <th>Descrição</th>
+
+        </tr>
+    </thead>
+    
+    {% for user in userDetails %}
+    
+    <tbody>
+        <tr>
+            <td>{{user[0]}}</td>
+            <td>{{user[1]}}</td>
+            <td>{{user[2]}}</td>
+        </tr>
+    </tbody>
+   
+
+    {% endfor %}
+
+    <tbody>
+        <tr>
+            <td>Jean</td>
+            <td>Flask</td>
+            <td>HTML</td>
+        </tr>
+    </tbody>
+
+</table>
+
+
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+      $('#users').DataTable({
+        	"language": {
+                "lengthMenu": "Mostrando _MENU_ registros por página",
+                "zeroRecords": "Nada encontrado",
+                "info": "Mostrando página _PAGE_ de _PAGES_",
+                "infoEmpty": "Nenhum registro disponível",
+                "infoFiltered": "(filtrado de _MAX_ registros no total)"
+            }
+        });
+  });
+  </script>
+
+  <script>
+     $(document).ready(function() {
+    $('#example').DataTable( {
+        "ajax": "data/objects.txt",
+        "columns": [
+            { "data": "email" },
+            { "data": "assunto" },
+            { "data": "descricao" }
+           
+            ]
+        } );
+    } );
+    </script>
+  
+</body>
+</html>
