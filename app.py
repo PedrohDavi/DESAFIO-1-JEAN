@@ -30,13 +30,6 @@ def home():
 def quem_somos():
     return render_template("quemsomos.html")
 
-'''
-@app.route("/contatos")
-def contatos():
-    return render_template("contatos.html")
-
-'''
-
 
 @app.route('/contatos', methods=['GET', 'POST'])
 def contatos():
@@ -67,3 +60,7 @@ def users():
         userDetails = cur.fetchall()
 
         return render_template("users.html", userDetails=userDetails)
+
+
+if __name__=='__main__':
+    app.run(debug=True)
