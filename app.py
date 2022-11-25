@@ -67,6 +67,3 @@ def users():
         userDetails = cur.fetchall()
 
         return render_template("users.html", userDetails=userDetails)
-
-
-   
